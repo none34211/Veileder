@@ -7,74 +7,72 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class='navbar'>
-    <h2>VEILEDER</h2>
-    <div class='nav-links'>
-      <a href='#hero'>Home</a>
-      <a href='#services'>Services</a>
-      <a href='#work'>Work</a>
-      <a href='#contact'>Contact</a>
+<nav class='navbar'>
+  <h2>VEILEDER</h2>
+  <div>
+    <a href='#services'>Services</a>
+    <a href='#work'>Work</a>
+    <a href='#contact'>Contact</a>
+  </div>
+</nav>
+
+<section class='hero'>
+  <div class='hero-text'>
+    <h1>We Build Digital Presence That Converts</h1>
+    <p>Social Media Management • Content Creation • Website Development</p>
+    <button onclick='scrollToSection("contact")'>Start Now</button>
+  </div>
+</section>
+
+<section id='services' class='section'>
+  <h2>Services</h2>
+  <div class='grid'>
+
+    <div class='box'>
+      <h3>Social Media Management</h3>
+      <p>Strategic handling of your social platforms to increase engagement and reach.</p>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <section id='hero' class='hero'>
-    <div class='overlay'></div>
-    <div class='hero-content'>
-      <h1>We Build Your Digital Presence</h1>
-      <p>Social Media • Content Creation • Website Development</p>
-      <button onclick='scrollToSection("contact")'>Get Started</button>
+    <div class='box'>
+      <h3>Content Creation</h3>
+      <p>Clean, high-quality posts designed to attract and convert your audience.</p>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section id='services' class='section'>
-    <h2>Our Services</h2>
-    <div class='cards'>
-      <div class='card'>
-        <img src='https://images.unsplash.com/photo-1611162616475-46b635cb6868' alt='social media'>
-        <h3>Social Media Management</h3>
-        <p>We grow and manage your brand across platforms.</p>
-      </div>
-
-      <div class='card'>
-        <img src='https://images.unsplash.com/photo-1508780709619-79562169bc64' alt='content'>
-        <h3>Post Creation</h3>
-        <p>High-quality content designed to engage and convert.</p>
-      </div>
-
-      <div class='card'>
-        <img src='https://images.unsplash.com/photo-1498050108023-c5249f4df085' alt='website'>
-        <h3>Website Development</h3>
-        <p>Modern, responsive websites built for performance.</p>
-      </div>
+    <div class='box'>
+      <h3>Website Development</h3>
+      <p>Fast, responsive websites built with modern design standards.</p>
     </div>
-  </section>
 
-  <!-- WORK -->
-  <section id='work' class='section dark'>
-    <h2>Our Work</h2>
-    <div class='work-card'>
-      <img src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f'>
-      <div>
-        <h3>Coaching Institute Website</h3>
-        <p>We designed and developed a full website for a coaching institute with a clean and professional interface.</p>
-      </div>
+  </div>
+</section>
+
+<section id='work' class='section light'>
+  <h2>Our Work</h2>
+
+  <div class='work'>
+    <div class='work-text'>
+      <h3>Coaching Institute Website</h3>
+      <p>
+        We designed and developed a complete website for a coaching institute,
+        focusing on clarity, performance, and user-friendly navigation.
+        The result was a clean and professional digital presence.
+      </p>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id='contact' class='section'>
-    <h2>Contact Us</h2>
-    <p>Email: veileder@gmail.com</p>
-    <button onclick='sendEmail()'>Email Us</button>
-  </section>
+    <img src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f'>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 VEILEDER</p>
-  </footer>
+<section id='contact' class='section'>
+  <h2>Contact</h2>
+  <p>veileder@gmail.com</p>
+  <button onclick='sendEmail()'>Send Email</button>
+</section>
 
-  <script src='script.js'></script>
+<footer>
+  <p>© 2026 VEILEDER</p>
+</footer>
+
+<script src='script.js'></script>
 </body>
 </html>
