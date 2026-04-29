@@ -1,74 +1,125 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <title>Veineder</title>
-  <link rel='stylesheet' href='style.css'>
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0a192f;
+}
 
-  <nav class='navbar'>
-    <h2>Veineder</h2>
-    <div class='nav-links'>
-      <a href='#'>Home</a>
-      <a href='#'>Services</a>
-      <a href='#'>Work</a>
-      <a href='#'>Contact</a>
-    </div>
-  </nav>
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0a192f;
+  color: white;
+  position: sticky;
+  top: 0;
+}
 
-  <section class='hero'>
-    <div class='layer layer1'></div>
-    <div class='layer layer2'></div>
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
 
-    <div class='hero-content'>
-      <h1>Grow Your Brand with Veineder</h1>
-      <p>Social Media Management • Content Creation • Website Development</p>
-      <button onclick='startNow()'>Get Started</button>
-    </div>
-  </section>
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  <section class='services'>
-    <h2>Our Services</h2>
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(10,25,47,0.7);
+}
 
-    <div class='cards'>
-      <div class='card'>
-        <h3>Social Media Management</h3>
-        <p>We manage and grow your presence across platforms.</p>
-      </div>
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  animation: fadeUp 1.5s ease;
+}
 
-      <div class='card'>
-        <h3>Post Creation</h3>
-        <p>High-quality, engaging content designed to convert.</p>
-      </div>
+button {
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #0a192f;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 6px;
+}
 
-      <div class='card'>
-        <h3>Website Development</h3>
-        <p>Modern, responsive websites built for performance.</p>
-      </div>
-    </div>
-  </section>
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
 
-  <section class='testimonial'>
-    <h2>Our Work</h2>
-    <div class='testimonial-card'>
-      <p>
-        Veineder helped us build a complete website for our coaching institute.
-        The design was clean, fast, and professional. Highly recommended!
-      </p>
-      <h4>— Coaching Institute Client</h4>
-    </div>
-  </section>
+.dark {
+  background: #0a192f;
+  color: white;
+}
 
-  <section class='cta'>
-    <h2>Ready to Grow?</h2>
-    <button onclick='startNow()'>Work With Us</button>
-  </section>
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-  <footer>
-    <p>© 2026 Veineder</p>
-  </footer>
+.card {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
 
-  <script src='script.js'></script>
-</body>
-</html>
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* WORK */
+.work-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.work-card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #0a192f;
+  color: white;
+  padding: 20px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
